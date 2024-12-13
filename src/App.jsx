@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router";
 import Home from "./pages/Home";
-import NotFound from "./pages/NotFound";
-import SignUp from "./pages/SignUp";
-import SignIn from "./pages/SignIn";
+import NotFound from "./pages/NotFound/NotFound";
+import SignUp from "./pages/SignUp/SignUp";
+import SignIn from "./pages/SignIn/SignIn";
 import Profile from "./pages/Profile";
 import Jobs from "./pages/Jobs/Jobs";
 import Navbar from "./components/Navbar/Navbar";

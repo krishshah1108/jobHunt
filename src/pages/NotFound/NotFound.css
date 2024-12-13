@@ -1,0 +1,13 @@
+/* NotFound.css */
+
+.notFound-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFound-container img {
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+}
