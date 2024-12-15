@@ -27,24 +27,12 @@ const SignIn = () => {
           />
         </div>
 
-        <div className='form-group'>
-          <p>Sign in as:</p>
-          <label>
-            <input type='radio' name='userType' value='user' />
-            User
-          </label>
-          <label>
-            <input type='radio' name='userType' value='company' />
-            Company
-          </label>
-        </div>
-
         <button type='submit' className='login-button'>
           Login
         </button>
 
         <div className='signin-links'>
-          <a href='/signup'>Don't have an account?</a>
+          <a href='/sign-up'>Don't have an account?</a>
           <a href='/forgot-password'>Forgot password?</a>
         </div>
       </form>

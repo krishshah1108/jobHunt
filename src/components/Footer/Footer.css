@@ -3,13 +3,14 @@
     color: #fff;
     text-align: center;
     padding: 20px;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     font-size: 1.7rem;
+    margin-top: auto; 
+    position: relative;
 }
+
 
 .footer-link {
     text-decoration: none;
