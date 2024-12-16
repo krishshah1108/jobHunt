@@ -17,6 +17,9 @@
   max-width: 400px;
   width: 100%;
 }
+.signup-highlight{
+  color: #1b03ee;
+}
 
 .form-group {
   margin-bottom: 1.5rem;

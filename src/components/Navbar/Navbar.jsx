@@ -14,21 +14,21 @@ const Navbar = () => {
       </div>
       <div className="search-bar">
         <form action="">
-          <input type="text" placeholder="Search..." />
+          <input type="text" placeholder="Find your job..." />
           <button type="submit">
             <GoSearch />
           </button>
         </form>
       </div>
       <div className="nav-links">
-        <NavLink to="/" className="nav-link">
+        {/* <NavLink to="/" className="nav-link">
           Home
-        </NavLink>
+        </NavLink> */}
         <NavLink to="/jobs" className="nav-link">
           Jobs
         </NavLink>
-        <NavLink to="/sign-in" className="nav-link">
-          Login
+        <NavLink to="/company" className="nav-link">
+          Company
         </NavLink>
         <NavLink to="/profile" className="nav-link">
           <img className="profile-icon" src="https://via.placeholder.com/50" alt="Profile" />
