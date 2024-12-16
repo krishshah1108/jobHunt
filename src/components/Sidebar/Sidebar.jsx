@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 import "./Sidebar.css";
 import {
   FaUserEdit,
@@ -9,47 +9,85 @@ import {
   FaKey,
   FaSignOutAlt,
   FaPlusSquare,
+  FaInfoCircle,
 } from "react-icons/fa";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar">
-      <h2 className="sidebar-title">Dashboard</h2>
-      <ul className="sidebar-menu">
+    <div className='sidebar'>
+      <h2 className='sidebar-title'>Dashboard</h2>
+      <ul className='sidebar-menu'>
         <li>
-          <Link className="side-link" to="/profile-update">
-            <FaUserEdit className="sidebar-icon" /> Profile Update
-          </Link>
+          <NavLink
+            to='/profile-update'
+            className='side-link'
+            activeClassName='active-link'
+          >
+            <FaUserEdit className='sidebar-icon' /> Profile Update
+          </NavLink>
         </li>
         <li>
-          <Link className="side-link" to="/applied-companies">
-            <FaBriefcase className="sidebar-icon" /> Applied Companies
-          </Link>
+          <NavLink
+            to='/applied-companies'
+            className='side-link'
+            activeClassName='active-link'
+          >
+            <FaBriefcase className='sidebar-icon' /> Applied Companies
+          </NavLink>
         </li>
         <li>
-          <Link className="side-link" to="/company-register">
-            <FaBuilding className="sidebar-icon" /> Company Register
-          </Link>
+          <NavLink
+            to='/company-register'
+            className='side-link'
+            activeClassName='active-link'
+          >
+            <FaBuilding className='sidebar-icon' /> Company Register
+          </NavLink>
         </li>
         <li>
-          <Link className="side-link" to="/add-vacancy">
-            <FaPlusSquare className="sidebar-icon" /> Add Vacancy
-          </Link>
+          <NavLink
+            to='/add-vacancy'
+            className='side-link'
+            activeClassName='active-link'
+          >
+            <FaPlusSquare className='sidebar-icon' /> Add Vacancy
+          </NavLink>
         </li>
         <li>
-          <Link className="side-link" to="/show-vacancies">
-            <FaList className="sidebar-icon" /> Show All Vacancies
-          </Link>
+          <NavLink
+            to='/show-vacancies'
+            className='side-link'
+            activeClassName='active-link'
+          >
+            <FaList className='sidebar-icon' /> Show All Vacancies
+          </NavLink>
         </li>
         <li>
-          <Link className="side-link" to="/change-password">
-            <FaKey className="sidebar-icon" /> Change Password
-          </Link>
+          <NavLink
+            to='/change-password'
+            className='side-link'
+            activeClassName='active-link'
+          >
+            <FaKey className='sidebar-icon' /> Change Password
+          </NavLink>
         </li>
         <li>
-          <Link className="side-link" to="/logout">
-            <FaSignOutAlt className="sidebar-icon" /> Log Out
-          </Link>
+          <NavLink
+            to='/logout'
+            className='side-link'
+            activeClassName='active-link'
+          >
+            <FaSignOutAlt className='sidebar-icon' /> Log Out
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to='/about'
+            className='side-link'
+            activeClassName='active-link'
+          >
+            <FaInfoCircle className='sidebar-icon' /> About
+          </NavLink>
         </li>
       </ul>
     </div>
