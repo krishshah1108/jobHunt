@@ -5,6 +5,7 @@ const SignIn = () => {
   return (
     <div className='signin-container'>
       <form className='signin-form'>
+        <h3>Welcome Back,</h3>
         <div className='form-group'>
           <label htmlFor='email'>Email</label>
           <input
@@ -27,24 +28,12 @@ const SignIn = () => {
           />
         </div>
 
-        <div className='form-group'>
-          <p>Sign in as:</p>
-          <label>
-            <input type='radio' name='userType' value='user' />
-            User
-          </label>
-          <label>
-            <input type='radio' name='userType' value='company' />
-            Company
-          </label>
-        </div>
-
         <button type='submit' className='login-button'>
           Login
         </button>
 
         <div className='signin-links'>
-          <a href='/signup'>Don't have an account?</a>
+          <a href='/sign-up'>Don't have an account?</a>
           <a href='/forgot-password'>Forgot password?</a>
         </div>
       </form>

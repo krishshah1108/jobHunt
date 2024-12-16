@@ -7,3 +7,21 @@
 html {
     font-size: 62.5%;
 }
+body{
+    height: 100%;
+}
+
+html, body {
+    height: 100%; /* Ensure the layout spans the full viewport height */
+    margin: 0; /* Remove default margins */
+    display: flex;
+    flex-direction: column;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the container covers the viewport */
+}
+
+
